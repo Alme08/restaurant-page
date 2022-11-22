@@ -1,0 +1,16 @@
+/* --bone: #E5DECBff;
+--vermilion: #D7442Cff;
+--eerie-black: #262523ff;
+--khaki-web: #D2C2A1ff;
+--cg-red: #D84731ff; */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#content{
+    height: minmax(auto, 100vh);
+    width: 100%;
+    background-color: #E5DECBff;
+}
