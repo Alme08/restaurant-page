@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* font-family: 'Sen', sans-serif; */
+/* font-family: 'Roboto', sans-serif; */
 /* --bone: #E5DECBff;
 --vermilion: #D7442Cff;
 --eerie-black: #262523ff;
@@ -5,12 +9,190 @@
 --cg-red: #D84731ff; */
 
 *{
+    font-family: 'Roboto', sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 #content{
-    height: minmax(auto, 100vh);
+    height: auto;
+    /* grid-template-rows: 1fr 5fr 1fr;
+    grid-template-columns: 1fr 1fr; */
     width: 100%;
     background-color: #E5DECBff;
+}
+
+/** HERO - HOME **/
+.hero-container{
+    padding: 30px 90px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* nav */
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+.nav > a{
+    border: 5px solid #D7442Cff;
+    text-align: center;
+    display: block;
+    height: 85px;
+    width: 85px;
+    font-size: 30px;
+    font-family: 'Sen', sans-serif;
+    text-decoration: none;
+    color: #D7442Cff;
+}
+.nav > a > span{
+    font-family: 'Sen', sans-serif;
+    letter-spacing: 0.15cm;
+}
+.nav > ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+    gap: 100px;
+}
+.nav > ul > li > button{
+    font-family: 'Sen', sans-serif;
+    cursor: pointer;
+    border: none;
+    font-size: 25px;
+    background: none;
+    color: #262523ff;
+    transition: color 0.1s ease-in-out;
+}
+.nav > ul > li > button:hover{
+    color: #D7442Cff;
+} 
+/* main */
+main{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+main > div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+main > div > p:first-child{
+    font-family: 'Sen', sans-serif;
+    color: #D7442Cff;
+    font-size: 70px;
+    font-weight: bold;
+}
+main > div > h1{
+    padding-top: 20px;
+    font-family: 'Sen', sans-serif;
+    font-size: 70px;
+}
+main > div > h1 > span{
+    display: block;
+    color: #D7442Cff;
+}
+main > div > p:last-of-type{
+    color: #262523ff;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+main > div > div{
+    height: 50px;
+    width: 200px;
+    border: 2px solid #D7442Cff;
+}
+main > div > button{
+    cursor: pointer;
+    height: 50px;
+    width: 200px;
+    font-size: 25px;
+    background-color: #D7442Cff;
+    color: #fff;
+    border: none;
+    transition: width 0.1s ease-in-out;
+}
+main > div > button:hover{
+    width: 225px;
+}
+main img{
+    max-width: 100%;
+    height: auto;
+    justify-self: end;
+}
+/* footer */
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer > ul{
+    display: flex;
+    list-style: none;
+    gap: 100px;
+    align-items: center;
+}
+footer > ul > li > button{
+    font-family: 'Sen', sans-serif;
+    cursor: pointer;
+    border: none;
+    font-size: 25px;
+    background: none;
+    color: #D7442Cff;
+    transition: color 0.1s ease-in-out;
+}
+footer > ul > li > button:hover{
+    color: #262523ff;
+}
+footer > div{
+    width: 70%;
+    justify-self: end;
+}
+footer > div > hr{
+    width: 100%;
+    border: 2px solid #D7442Cff;
+}
+
+/** MENU **/
+
+
+.menu-container{
+    padding: 30px 90px;
+    width: 100%;
+    background-color: #E5DECBff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+.menu-container h1{
+    font-family: 'Sen', sans-serif;
+    color: #D7442Cff;
+    text-align: center;
+    font-size: 80px;
+}
+.card{
+    border: 2px solid #000;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+.card h2{
+    text-align: center;
+    width: 300px;
+    font-family: 'Sen', sans-serif;
+    background-color: #E5DECBff;
+    font-size: 50px;
+    position: relative;
+    bottom: 30px;
+    left: 720px;
 }
