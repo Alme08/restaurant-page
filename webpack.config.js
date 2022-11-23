@@ -7,7 +7,6 @@ module.exports = {
   },
   output: {
     filename: 'main.js',
-    filename: 'main.css',
     path: path.resolve(__dirname, 'dist'),
   },
 };
