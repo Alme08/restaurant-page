@@ -1,6 +1,6 @@
-export const displayHome = (content) =>{
-    content.innerHTML = `
-    <div class="hero-container">
+export const displayContact = (content)=>{
+    content.innerHTML= `
+    <div class="contact">
             <nav class="nav">
                 <a href="#">NO<br><span>RI</span></a>
                 <ul>
@@ -10,16 +10,22 @@ export const displayHome = (content) =>{
                     <li><button id="about">About us</button></li>
                 </ul>
             </nav>
-            <main>
-                <div>
-                    <p>ラーメン</p>
-                    <h1>A BOWL OF LOVE FROM <span>JAPANESE CUISINE</span> FOR YOU</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas error minima itaque perspiciatis illo rerum incidunt nulla eaque ex, pariatur delectus odio eligendi aperiam adipisci molestiae ab deserunt autem. Animi.</p>
-                    <button>Order Now</button>
-                    
-                </div>
-                <img src="assets/Ramen infographics.png" alt="Ramen">
-            </main>
+            <div>
+                <h1>Say <span>hello!</span></h1>
+                <form action="">
+                    <div>
+                        <input type="text" placeholder="First Name">
+                        <input type="text" placeholder="Last Name">
+                    </div>
+    
+                    <input type="email" placeholder="E-mail">
+                    <div>
+                        <textarea name="" id="" cols="0" rows="0" placeholder="How we can help you?"></textarea>
+
+                    </div>
+                </form>
+            </div>
+
             <footer>
                 <ul>
                     <li><button id="home">Home</button></li>

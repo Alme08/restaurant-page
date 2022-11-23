@@ -181,12 +181,16 @@ footer > div > hr{
     font-size: 80px;
 }
 .card{
-    border: 2px solid #000;
+    width: 70%;
+    margin: 0 auto;
+    border: 2px solid #D7442Cff;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 1fr repeat(2, 4fr) 1fr;
+    padding: 10px;
 }
 .card h2{
+    color: #D7442Cff;
     text-align: center;
     width: 300px;
     font-family: 'Sen', sans-serif;
@@ -194,5 +198,145 @@ footer > div > hr{
     font-size: 50px;
     position: relative;
     bottom: 30px;
-    left: 720px;
+    margin: 0 auto;
+    grid-column: 1 / -1;
+}
+.card > div:first-child{
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+}
+.card > div:last-of-type{
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+}
+.card > div{
+    width: 50%;
+    margin: 0 auto;
+}
+.card > div > h3{
+    color: #D7442Cff;
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+.card > div > p{
+    text-align: center;
+    font-size: 25px;
+}
+.card > i{
+    grid-row: 2 / 4;
+    grid-column: 2 / 3;
+    align-self: center;
+    justify-self: center;
+    font-size: 500px;
+    color: #262523ff;
+}
+
+.card:last-of-type > div:first-child{
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+.card:last-of-type > div:last-of-type{
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+}
+.card:last-of-type > i{
+    grid-row: 2 / 4;
+    grid-column: 1 / 2;
+}
+
+.menu h2{
+    font-size: 50px;
+    color: #D7442Cff;
+    text-align: center;
+}
+.menu > h2 > i{
+    padding: 20px;
+}
+
+.drinks{
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    border: 2px solid #D7442Cff;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 3fr;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.drinks > h3{
+    color: #D7442Cff;
+    font-size: 50px;
+    padding-bottom: 10px;
+}
+.drinks > h3:first-child{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+.drinks > h3:last-of-type{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+.drinks > ul{
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+    list-style: none;
+}
+.drinks > ul > hr{
+    width: 50px;
+    border: 2px solid #D7442Cff;
+}
+.drinks > div{
+    width: 70%;
+    grid-row: 2 / 3;
+    grid-column: 2 /3;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+}
+.drinks span{
+    font-weight: bold;
+}
+/** CONTACT **/
+
+.contact{
+    padding: 30px 90px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contact h1{
+    font-family: 'Sen', sans-serif;
+    font-size: 70px;
+    margin-bottom: 50px;
+}
+.contact h1 span{
+    color: #D7442Cff;
+}
+.contact input{
+    margin-right: 50px;
+    margin-bottom: 50px;
+    padding: 10px;
+    background: none;
+    font-size: 30px;
+    border: none;
+    border-bottom: 5px solid #D7442Cff;
+    /* width: 100%; */
+}
+.contact > div > form > input:last-of-type{
+    width: 855px;
+}
+.contact textarea{
+    width: 855px;
+    padding: 10px;
+    background: none;
+    font-size: 30px;
+    border: none;
+    border-bottom: 5px solid #D7442Cff;
 }
