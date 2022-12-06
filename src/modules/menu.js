@@ -1,5 +1,6 @@
-export const displayMenu = (content) =>{
-    content.innerHTML = `
+const displayMenu = (content) => {
+  const container = content;
+  container.innerHTML = `
     <div class="menu-container">
             <nav class="nav">
                 <a href="#">NO<br><span>RI</span></a>
@@ -76,5 +77,6 @@ export const displayMenu = (content) =>{
                 </div>
             </footer>
         </div>
-    `
-}
+    `;
+};
+export default displayMenu;

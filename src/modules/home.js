@@ -1,5 +1,6 @@
-export const displayHome = (content) =>{
-    content.innerHTML = `
+const displayHome = (content) => {
+  const container = content;
+  container.innerHTML = `
     <div class="hero-container">
             <nav class="nav">
                 <a href="#">NO<br><span>RI</span></a>
@@ -31,5 +32,6 @@ export const displayHome = (content) =>{
                 </div>
             </footer>
         </div>
-    `
-}
+    `;
+};
+export default displayHome;

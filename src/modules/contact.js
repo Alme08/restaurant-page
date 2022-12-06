@@ -1,5 +1,6 @@
-export const displayContact = (content)=>{
-    content.innerHTML= `
+const displayContact = (content) => {
+  const container = content;
+  container.innerHTML = `
     <div class="contact">
             <nav class="nav">
                 <a href="#">NO<br><span>RI</span></a>
@@ -37,5 +38,6 @@ export const displayContact = (content)=>{
                 </div>
             </footer>
         </div>
-    `
-}
+    `;
+};
+export default displayContact;
