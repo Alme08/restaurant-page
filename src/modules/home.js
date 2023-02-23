@@ -21,16 +21,6 @@ const displayHome = (content) => {
                 </div>
                 <img src="assets/Ramen infographics.png" alt="Ramen">
             </main>
-            <footer>
-                <ul>
-                    <li><button id="home">Home</button></li>
-                    <li><button id="menu">Menu</button></li>
-                    <li><button id="contact">Contact us</button></li>
-                </ul>
-                <div>
-                    <hr>
-                </div>
-            </footer>
         </div>
     `;
 };
